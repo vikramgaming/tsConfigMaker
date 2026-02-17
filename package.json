@@ -1,5 +1,5 @@
 {
-  "name": "@ryu/tsconfig-maker",
+  "name": "tsconfig-maker",
   "version": "1.0.0",
   "description": "for someone who doesn't have auto complete in tsconfig.json",
   "license": "ISC",
