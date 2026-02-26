@@ -1,2 +1,2 @@
 import type { TSConfig } from "./tsConfigType";
-export declare function tsc(config: TSConfig, space?: number, inFolder?: string): Promise<void>;
+export declare function writeTsConfig(config: TSConfig, space?: number, inFolder?: string): Promise<void>;

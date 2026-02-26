@@ -3,11 +3,7 @@ import { cwd } from "process";
 import { join } from "path";
 import type { TSConfig } from "./tsConfigType";
 
-export async function tsc(
-    config: TSConfig,
-    space = 2,
-    inFolder = ""
-): Promise<void> {
+export async function writeTsConfig(config: TSConfig, space = 2, inFolder = ""): Promise<void> {
     const dirPath = join(cwd(), inFolder);
     await mkdir(dirPath, { recursive: true });
 
