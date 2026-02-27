@@ -5,7 +5,13 @@ writeTsConfig({
         strict: true,
         alwaysStrict: true,
         
+        baseUrl: "./",
+        rootDir: "./src",
+        outDir: "./dist",
+        
+        incremental: true,
+        tsBuildInfoFile: "./node_modules/.cache/.tsbuildinfo"
     },
-    include: [],
-    exclude: []
+    include: ["src/**/*"],
+    exclude: ["node_modules", "dist"]
 }, 2, "./");
